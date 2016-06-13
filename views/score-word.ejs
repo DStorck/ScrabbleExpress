@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Word Score </h1>
+    <% if (message !== '') { %>
+      <%= message %>
+      <% } else { %>
+        <p>The word <%= word %> scored <%= score %> points.  Not too shabby.</p>
+      <% } %>
+  </body>
+</html>

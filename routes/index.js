@@ -6,6 +6,10 @@ var ScrabbleController = require('../controllers/scrabble')
 
 router.get('/', ScrabbleController.index)
 
+router.get('/scrabble/score/:word', ScrabbleController.scoreWord)
+
+
+
 
 
 
