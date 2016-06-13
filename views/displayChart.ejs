@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <!-- <p>Welcome to <%= title %></p> -->
+    <p> Here is a chart with infomation.  Isn't this exciting?? </p>
+    <p> letter scores:</p>
+    <% for (var letter in letter_scores) { %>
+    <%= letter %>: <%=  letter_scores[letter] %><br>
+    <% } %>
+
+  </body>
+</html>
