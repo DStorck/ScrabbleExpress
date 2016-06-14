@@ -8,6 +8,10 @@ router.get('/', ScrabbleController.index)
 
 router.get('/scrabble/score/:word', ScrabbleController.scoreWord)
 
+router.get('/scrabble/score', ScrabbleController.scoreWordForm)
+
+router.post('/scrabble/score', ScrabbleController.showScore)
+
 
 
 

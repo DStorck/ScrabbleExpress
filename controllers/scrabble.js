@@ -25,6 +25,22 @@ var ScrabbleController = {
     }
 
     response.render('score-word', locals)
+  },
+
+  scoreWordForm: function(request, response){
+
+    response.render('score_form')
+  },
+
+  showScore: function(request, response){
+    var locals = {}
+    locals.word = request.body.word
+    locals.score = scrabble.score(request.body.word)
+    locals.message = ''
+    if (isNaN(locals.score)){
+      locals.message = "Sorry, that is not a word that can be scored."
+    }
+    response.render('score-word', locals)
   }
 }
 
